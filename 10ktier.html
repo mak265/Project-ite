@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>10k Tier List-Techram</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+body{
+  background-color: #e1e8ed;
+}
+th {
+  padding: 10px;
+}
+
+
+#top-search{
+  background-color: #1034A6;
+  padding: 0px 5%;
+  height: 0;
+}
+.input-box{
+  position: relative;
+}
+#top-search .search{
+  width: 100%;
+  height: 40px;
+  padding: 0 30px 0 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 17px;
+}
+#top-search .search::placeholder{
+  font-size: 17px;
+  color: #fff;
+}
+#top-search .search:focus{
+  outline: none;
+}
+.topser-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 27px;
+  border: none;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+#topsercross-icon{
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  top: 3px;
+}
+
+.header{
+  position: relative;
+  background: #199ccc;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.navbar ul{
+  list-style: none;
+}
+.navbar>ul{
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li{
+  position: relative;
+}
+.navbar ul li a{
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 22px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.navbar ul li a.active,
+.navbar ul>li>a:hover{
+  color: white;
+}
+.ser-btn ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.ser-btn #ser-btn-icon{
+  display: inline-block;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+#bar-icon{
+  display: none;
+}
+
+@media(min-width:992px){
+  .navbar ul li ul{
+    position: absolute;
+    border-top: 3px solid #0093FF;
+    list-style: none;
+    min-width: 250px;
+    background: #152733;
+    padding: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbar ul>li:hover>ul{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.navbar ul ul li{
+  position: relative;
+}
+.navbar ul ul li a{
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 8px 10px;
+  line-height: 1.8rem;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.navbar ul ul li a:hover{
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: transparent;
+  padding-left: 25px;
+}
+
+.navbar ul li ul ul{
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+}
+
+
+@media(max-width:1200px){
+  .logo a{
+    font-size: 20px;
+  }
+  .navbar ul li a{
+    font-size: 15px;
+    padding: 22px 16px;
+  }
+ 
+}
+
+@media(max-width:992px){
+  .navbar>ul{
+    position: absolute;
+    background-color: #152733;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    border-top: 8px solid #0d6efd;
+  }
+  .header{
+    height: 60px;
+  }
+  .ser-btn #bar-icon{
+    display: block;
+  }
+  .ser-btn #bar-icon a{
+    background-color: #0162CA;
+    color: #fff;
+    font-size: 27px;
+    padding: 1px 5px;
+  }
+  .logo a{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .navbar ul li{
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .navbar ul li a{
+    padding: 15px 16px;
+  }
+
+  .navbar ul li>ul{
+    background-color: #2b5570;
+  }
+  .navbar ul li>ul li a{
+    font-size: 13px;
+    padding: 10px 25px;
+  }
+
+.navbar ul li ul li>ul{
+  background-color: #0162cA;
+}
+
+#menu{
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+#menu.show{
+  overflow-y: scroll;
+  visibility: visible;
+  opacity: 1;
+  max-height: 100vh;
+}
+</style>
+</head>
+<body>
+	<div class="nav-wrapper">
+    <div class="nav-container">
+      <div id="top-search">
+        <form action="">
+          <div class="input-box">
+            <span class="topser-icon">⚲</span>
+            <input type="text" class="search" placeholder="Search...">
+            <span id="topsercross-icon">✕</span>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="header">
+        <div class="logo">
+          <a href="Home.html">Techram</a>
+        </div>
+        <div class="navbar">
+          <ul id="menu">
+            <li><a href="Home.html" class="active">home</a></li>
+            <li><a href="tier.html">phones</a></li>
+            <li><a href="About us.html">about us</a></li>
+            <li><a href="Contact us.html">contact us</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="ser-btn">
+          <ul>
+            <li><a href="#"><span id="ser-btn-icon">⚲</span></a></li>
+            <li id="bar-icon"><a href="#">☰</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+<h1 style="text-align:center">BEST PHONES UNDER PHP10K TIER LIST!</h1>
+<div style="overflow-x: auto;">
+<table>
+<tr>
+<th>
+<div class="Oppo"> 
+<a class="oppo-wrapper" href="ZTE Blade V40 Design.html">
+<div class="oppo_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2023/02/zte-blade-v40-design-1-219x300.jpg">
+<div class="oppo_img_overlay">
+</div>
+</div> 
+</a>
+<div class="oppo_content">
+<div class="oppo_post_title">
+<div>
+<a style="font-size:15px;" href="ZTE Blade V40 Design.html">
+<div>ZTE Blade V40 Design</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Vivo"> 
+<a class="vivo-wrapper" href="TECNO POVA 4 Pro.html">
+<div class="vivo_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/10/tecno-pova4-pro.jpg">
+<div class="vivo_img_overlay">
+</div>
+</div> 
+</a>
+<div class="vivo_content">
+<div class="vivo_post_title">
+<div>
+<a style="font-size:15px;" href="TECNO POVA 4 Pro.html">
+<div>TECNO POVA 4 Pro</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Poco"> 
+<a class="Poco-wrapper" href="Infinix Note 12 G96.html">
+<div class="Poco_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/06/infinix-note12.jpg">
+<div class="Poco_img_overlay">
+</div>
+</div> 
+</a >
+<div class="Poco_content">
+<div class="Poco_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Note 12 G96.html">
+<div>Infinix Note 12 G96</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Xiaomi"> 
+<a class="Xiaomi-wrapper" href="TECNO Spark Go 2023.html">
+<div class="Xiaomi_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2023/01/tecno-spark-go-2023.jpg">
+<div class="Xiaomi_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Xiaomi_content">
+<div class="Xiaomi_post_title">
+<div>
+<a style="font-size:15px;" href="TECNO Spark Go 2023.html">
+<div>TECNO Spark Go 2023</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Samsung"> 
+<a class="Samsung-wrapper" href="Itel Vision 5.html">
+<div class="Samsung_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/Itel-Vision5-e1670827050450.jpg">
+<div class="Samsung_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Samsung_content">
+<div class="Samsung_post_title">
+<div>
+<a style="font-size:15px;" href="Itel Vision 5.html">
+<div>Itel Vision 5</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Huawei"> 
+<a class="Huawei-wrapper" href="Infinix Hot 20 5G.html">
+<div class="Huawei_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/infinix-hot20-5g.jpg">
+<div class="Huawei_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Huawei_content">
+<div class="Huawei_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Hot 20 5G.html">
+<div>Infinix Hot 20 5G</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Lenovo"> 
+<a class="Lenovo-wrapper" href="Infinix Hot 20S.html">
+<div class="Lenovo_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/10/infinix-hot20s.jpg">
+<div class="Lenovo_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Lenovo_content">
+<div class="Lenovo_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Hot 20S.html">
+<div>Infinix Hot 20S</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Realme"> 
+<a class="Realme-wrapper" href="TCL 30 SE.html">
+<div class="Realme_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/10/tcl-30se.jpg">
+<div class="Realme_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Realme_content">
+<div class="Realme_post_title">
+<div>
+<a style="font-size:15px;" href="TCL 30 SE.html">
+<div>TCL 30 SE</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="Infinix"> 
+<a class="Infinix-wrapper" href="TECNO POVA 4.html">
+<div class="Infinix_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/10/Tecno-Pova-4-e1665386172385-215x300.jpg">
+<div class="Infinix_img_overlay">
+</div>
+</div> 
+</a>
+<div class="Infinix_content">
+<div class="Infinix_post_title">
+<div>
+<a style="font-size:15px;" href="TECNO POVA 4.html">
+<div>TECNO POVA 4</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="BlackShark"> 
+<a class="BlackShark-wrapper" href="POCO M4 5G.html">
+<div class="BlackShark_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/10/xiaomi-poco-m4-5g.jpg">
+<div class="BlackShark_img_overlay">
+</div>
+</div> 
+</a>
+<div class="BlackShark_content">
+<div class="BlackShark_post_title">
+<div>
+<a style="font-size:15px;" href="POCO M4 5G.html">
+<div>POCO M4 5G</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="RedMagic"> 
+<a class="RedMagic-wrapper" href="Tecno Pova Neo 2.html">
+<div class="RedMagic_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/09/tecno-pova-neo2.jpg">
+<div class="RedMagic_img_overlay">
+</div>
+</div> 
+</a>
+<div class="RedMagic_content">
+<div class="RedMagic_post_title">
+<div>
+<a style="font-size:15px;" href="Tecno Pova Neo 2.html">
+<div>Tecno Pova Neo 2</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="POCO M5s.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/09/xiaomi-poco-m5s-.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="POCO M5s.html">
+<div>POCO M5s</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="POCO M5.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/09/xiaomi-poco-m5-.jpeg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="POCO M5.html">
+<div>POCO M5</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Infinix Hot 12 Play.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/08/infinix-hot-12-play-nfc.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Hot 12 Play.html">
+<div>Infinix Hot 12 Play</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Tecno Pova 3.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/lan.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Tecno Pova 3.html">
+<div>Tecno Pova 3</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Cherry Mobile Aqua S10 Pro 5G.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/s10.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Cherry Mobile Aqua S10 Pro 5G.html">
+<div>Cherry Mobile Aqua S10 Pro 5G</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="realme narzo 50.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/03/realme-narzo-50.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="realme narzo 50.html">
+<div>realme narzo 50</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Xiaomi Redmi Note 11.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/03/xiaomi-redmi-note-11-global.jpeg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Xiaomi Redmi Note 11.html">
+<div>Xiaomi Redmi Note 11</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="ZTE Blade A31 Plus.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2023/02/zte-blade-a31-plus.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="ZTE Blade A31 Plus.html">
+<div>ZTE Blade A31 Plus</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="ZTE Blade A52 Lite.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2023/02/zte-blade-a52-lite.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="ZTE Blade A52 Lite.html">
+<div>ZTE Blade A52 Lite</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="ZTE Blade A52.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2023/02/zte-blade-a52.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="ZTE Blade A52.html">
+<div>ZTE Blade A52</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="OPPO A57 2022.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/oppo-a57-5g.jpeg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="OPPO A57 2022.html">
+<div>OPPO A57 2022</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Cherry Mobile Aqua S10.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/11/Cherry-Mobile-Aqua-S10-300x225.jpg-e1668054686316.webp">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Cherry Mobile Aqua S10.html">
+<div>Cherry Mobile Aqua S10</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="HONOR X7.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/09/honor-x7.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="HONOR X7.html">
+<div>HONOR X7</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Infinix Hot 11 2022.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/08/infinix-hot-11-2022.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Hot 11 2022.html">
+<div>Infinix Hot 11 2022</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="realme narzo 50i Prime.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/08/realme-narzo-50i-prime.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="realme narzo 50i Prime.html">
+<div>realme narzo 50i Prime</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Xiaomi Redmi 10C.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/07/xiaomi-redmi-10c.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Xiaomi Redmi 10C.html">
+<div>Xiaomi Redmi 10C</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+</tr>
+<tr>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="POCO C40.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/07/xiaomi-poco-c40-1.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="POCO C40.html">
+<div>POCO C40</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Wiko T3.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/wiko-t3-2.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Wiko T3.html">
+<div>Wiko T3</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="vivo T1x.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/vivo-T1x-4G-322.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="vivo T1x.html">
+<div>vivo T1x</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="realme narzo 50A Prime.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/realmenarzo50Aprime2.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="realme narzo 50A Prime.html">
+<div>realme narzo 50A Prime</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Infinix Hot 12i.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/05/infinixhot12i.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Infinix Hot 12i.html">
+<div>Infinix Hot 12i</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="realme C31.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/realme-c31.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="realme C31.html">
+<div>realme C31</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Huawei nova Y70.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/70-e1671703647988.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Huawei nova Y70.html">
+<div>Huawei nova Y70</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Cherry Mobile Aqua S10 Lite.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/adasdasdas.png">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Cherry Mobile Aqua S10 Lite.html">
+<div>Cherry Mobile Aqua S10 Lite</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+<th>
+<div class="ROG"> 
+<a class="ROG-wrapper" href="Samsung Galaxy A04S.html">
+<div class="ROG_img">
+<img width="90" height="120" src="https://unboxdiaries.com/wp-content/uploads/2022/12/samsung-galaxy-a04s.jpg">
+<div class="ROG_img_overlay">
+</div>
+</div> 
+</a>
+<div class="ROG_content">
+<div class="ROG_post_title">
+<div>
+<a style="font-size:15px;" href="Samsung Galaxy A04S.html">
+<div>Samsung Galaxy A04S</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</th>
+</tr>
+</table>
+</div>
+ <script> 
+    const seaCont = document.getElementById("top-search");
+const serHide = document.getElementById("topsercross-icon");
+const serShow = document.getElementById("ser-btn-icon");
+
+serShow.addEventListener("click", () => {
+  seaCont.style.padding = "5px 5%";
+  seaCont.style.height = "50px";
+  seaCont.style.transition = "all 0.5s";
+});
+
+serHide.addEventListener("click", () => {
+  seaCont.style.height = "0";
+  seaCont.style.padding = "0 5%";
+})
+
+
+// =============Navbar Hide and Show==============
+
+const barbtn = document.getElementById("bar-icon");
+const dropdown = document.getElementById("menu");
+
+barbtn.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
+})
+
+
+</script>
+</body>
+</html>
